@@ -60,9 +60,6 @@
 #define WEAPON_NORMAL		list(mode_name="standard", icon="semi")
 #define WEAPON_CHARGE		list(mode_name="charge mode", mode_type = /datum/firemode/charge, icon="charge")
 
-#define BASE_RECOIL_CONTROL 1
-#define VIG_RECOIL_CONTROL  0.015 // how much recoil will be controlled per vig point
-#define MAX_RECOIL_CONTROL  0.5
 #define MAX_ACCURACY_OFFSET  30 //It's both how big gun recoil can build up, and how hard you can miss
 #define RECOIL_REDUCTION_TIME 1 SECOND
 

@@ -4,11 +4,8 @@
 		if(!G.wielded)
 			recoil += G.one_hand_penalty //Then the one hand penalty wil lbe added to the recoil.
 	if(G.recoil_buildup)
-		recoil += G.recoil_buildup * calc_reduction() //reducing recoil buildup based on vig stat
+		recoil += G.recoil_buildup
 		update_recoil()
-
-/mob/living/proc/calc_reduction()
-	return max(BASE_RECOIL_CONTROL - stats.getStat(STAT_VIG)*VIG_RECOIL_CONTROL, MAX_RECOIL_CONTROL)
 
 /mob/living/proc/calc_recoil()
 	recoil -= 300
